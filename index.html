@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body>
+  <audio id="mytrack" controls>
+    <source src="music/Dancing_in_the Streets.m4a" type="audio/mp3"></audio>
+  </audio>
+  <div id="jukebox-wrapper">
+    <img id="jukebox-back" src="img/jukebox-background.png" alt="">
+    <img id="vinyl" src="img/vinyl.png" alt="">
+    <div id="jukebox">
+      <img src="img/jukebox.png" alt="">
+    </div>
+    <div id="jukebox-buttons">
+      <button type="button" id="jukebox-play" onclick="jbPlay()"></button>
+      <button type="button" id="jukebox-pause" onclick="jbPause()"></button>
+      <button type="button" id="jukebox-prev"></button>
+      <button type="button" id="jukebox-next"></button>
+      <button type="button" id="jukebox-stop"></button>
+    </div>
+    <div id="light-buttons">
+      <ul>
+        <li><img src="img/button.png"></li>
+        <li><img src="img/button.png"></li>
+        <li><img src="img/button.png"></li>
+        <li><img src="img/button.png"></li>
+        <li><img src="img/button.png"></li>
+        <li><img src="img/button.png"></li>
+      </ul>
+    </div>
+
+  </div>
+  
+  <script type="text/javascript" src="controls.js"></script>
+</body>
+</html>
