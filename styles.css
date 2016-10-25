@@ -4,9 +4,11 @@ html {
 
 body {
   height: 100%;
-  background-color: #272727; 
 }
 
+#mytrack {
+  display: none;
+}
 #jukebox-wrapper {
   position: relative;
   width: 691px;
@@ -85,7 +87,6 @@ body {
 }
 
 #mytrack {
-  display: none;
 }
 
 #light-buttons {
@@ -110,15 +111,11 @@ body {
   z-index: 2;
   top: 125px;
   left: 201px;
+  -webkit-animation-timing-function: cubic-bezier(0.10,.0,.95, 1.0);
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+
 }
 
-
-@keyframes spin-right {
-  100% {
-    -webkit-transform: rotate(360deg);
-       -moz-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-         -o-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
