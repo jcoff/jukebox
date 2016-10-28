@@ -1,0 +1,12 @@
+/************************************/
+/**** Alleycat Framework styles  ****/ 
+/************************************/
+
+/* Image border styles */
+.rounded-corners-border {
+	border-radius: 5%;	
+}
+
+.circle-border {
+	border-radius: 50%;
+}

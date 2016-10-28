@@ -1,0 +1,211 @@
+@font-face {
+  font-family: jukebox-ft;  
+  src: url(fonts/Canter-Outline.otf);  
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+#mytrack {
+  display: none;
+}
+#jukebox-wrapper {
+  position: relative;
+  width: 691px;
+  height: 1014px;
+  margin: 0 auto;
+}
+
+#jukebox-back {
+  position: absolute;
+  z-index: 1;
+  left: 115px;
+  top: 65px;
+}
+
+#jukebox {
+  position: absolute;
+  z-index: 3;
+}
+
+#jukebox-buttons {
+  position: absolute;
+  z-index: 4;
+  left: 210px;
+  top: 285px;
+}
+#jukebox-buttons button {
+  border-radius: 5px;
+  margin-right: 3px;
+  border: none;
+  outline: none;
+}
+#jukebox-buttons button:active {
+  position: relative;
+  top: 1px;
+}
+
+#jukebox-play {
+  background-color: #fdefd5;
+  border: none;
+  width: 48px;
+  height: 33px;
+  background-image: url(img/play.png);
+  background-position: center;
+}
+#jukebox-pause {
+  background-color: #fdefd5;
+  border: none;
+  width: 48px;
+  height: 33px;
+  background-image: url(img/pause.png);
+  background-position: center;
+}
+#jukebox-prev {
+  background-color: #fdefd5;
+  border: none;
+  width: 48px;
+  height: 33px;
+  background-image: url(img/prev-track.png);
+  background-position: center;
+}
+#jukebox-next {
+  background-color: #fdefd5;
+  border: none;
+  width: 48px;
+  height: 33px;
+  background-image: url(img/next-track.png);
+  background-position: center;
+}
+#jukebox-stop {
+  background-color: #fdefd5;
+  border: none;
+  width: 48px;
+  height: 33px;
+  background-image: url(img/stop.png);
+  background-position: center;
+}
+
+#mytrack {
+}
+
+#light-buttons {
+  position: absolute;
+  z-index: 4;
+  top: 317px;
+  left: 78px;
+}
+#light-buttons img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#light-buttons ul {
+  list-style: none;
+}
+#light-buttons li {
+  margin-bottom: 21px;
+}
+
+#lb0 {
+  z-index: 4;
+  position: absolute;
+  top: 17px;
+}
+#lb1 {
+  z-index: 4;
+  position: absolute;
+  top: 86px;
+}
+#lb2 {
+  z-index: 4;
+  position: absolute;
+  top: 153px;
+}
+#lb3 {
+  z-index: 4;
+  position: absolute;
+  top: 220px;
+}
+#lb4 {
+  z-index: 4;
+  position: relative;
+  top: 268px;
+}
+#lb5 {
+  z-index: 4;
+  position: absolute;
+  top: 355px;
+}
+#playlist {
+  position: absolute;
+  left: 115px;
+}
+#playlist p {
+  position: relative;
+  font: 46px jukebox-ft;
+  color: #2A2626;
+  letter-spacing: 0px;
+  overflow: auto;
+}
+p#tr0 {
+  top: -64px;
+}
+p#tr1 {
+  top: -55px;
+}
+p#tr2 {
+  top: -46px;
+}
+p#tr3 {
+  top: -37px;
+}
+p#tr4 {
+  top: -28px;
+}
+p#tr5 {
+  top: -20px;
+}
+
+#vinyl-wrapper {
+  position: absolute;
+  top: 125px;
+  left: 201px;
+  z-index: 2;
+    -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+}
+
+.nowrap {
+  white-space: nowrap ;
+}
+
+#vinyl {
+  display: block;
+  position: relative;
+  z-index: 2;
+  -webkit-animation-timing-function: cubic-bezier(0.10,.0,.95, 1.0);
+  -moz-animation-timing-function: cubic-bezier(0.10,.0,.95, 1.0);
+  -o-animation-timing-function: cubic-bezier(0.10,.0,.95, 1.0);
+    animation-timing-function: cubic-bezier(0.10,.0,.95, 1.0);
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+}
+
+.content {
+  padding-top: 20px;
+}
+
