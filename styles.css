@@ -185,7 +185,7 @@ p#tr5 {
 }
 
 #jb-mobile-wrapper {
-  display: inline-block;
+  display: none;
   position: relative;
   margin: 0 auto;
   width: 866px;
@@ -200,7 +200,7 @@ p#tr5 {
   width: 50px;
   height: 111px;
   left: 207px;
-  top: 316px;
+  top: 418px;
   z-index: 3;
 }
 #mobile-btn img {
