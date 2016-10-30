@@ -98,7 +98,7 @@ body {
   position: absolute;
   z-index: 4;
   top: 317px;
-  left: 78px;
+  left: 75px;
 }
 #light-buttons img {
     display: block;
@@ -113,34 +113,28 @@ body {
 }
 
 #lb0 {
-  z-index: 4;
   position: absolute;
   top: 17px;
 }
 #lb1 {
-  z-index: 4;
   position: absolute;
   top: 86px;
 }
 #lb2 {
-  z-index: 4;
   position: absolute;
   top: 153px;
 }
 #lb3 {
-  z-index: 4;
   position: absolute;
   top: 220px;
 }
 #lb4 {
-  z-index: 4;
-  position: relative;
-  top: 268px;
+  position: absolute;
+  top: 289px;
 }
 #lb5 {
-  z-index: 4;
   position: absolute;
-  top: 355px;
+  top: 358px;
 }
 #playlist {
   position: absolute;
@@ -154,22 +148,22 @@ body {
   overflow: auto;
 }
 p#tr0 {
-  top: -64px;
+  top: -44px;
 }
 p#tr1 {
-  top: -55px;
+  top: -68px;
 }
 p#tr2 {
-  top: -46px;
+  top: -94px;
 }
 p#tr3 {
-  top: -37px;
+  top: -118px;
 }
 p#tr4 {
-  top: -28px;
+  top: -144px;
 }
 p#tr5 {
-  top: -20px;
+  top: -170px;
 }
 
 #vinyl-wrapper {
@@ -184,6 +178,9 @@ p#tr5 {
 
 .nowrap {
   white-space: nowrap ;
+}
+#light-buttons img {
+  cursor: pointer;
 }
 
 #vinyl {
@@ -203,9 +200,5 @@ p#tr5 {
   -o-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 
-}
-
-.content {
-  padding-top: 20px;
 }
 

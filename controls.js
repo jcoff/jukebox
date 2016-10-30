@@ -39,13 +39,27 @@ function prevTrack() {
     $("#vinyl").css("animation-play-state", "paused");
   mytrack.load();
   jbTrackCount--;
-  if(jbTrackCount>=jbPlaylist.length) {
-    jbTrackCount=0;
+  if(jbTrackCount<=0) {
+    jbTrackCount=5;
   }
   console.log(jbTrackCount);
   mytrack.src=jbPlaylist[jbTrackCount];
 }
+
 var commmonBulbImg = '';
+
+function trackOnDemand(thisTrack) {
+  mytrack.pause();
+  vinyl.removeAttribute(
+  'style', vinylCss
+  );
+  $("#vinyl").css("animation-play-state", "paused");
+  mytrack.load();
+  jbTrackCount = thisTrack;
+  mytrack.src=jbPlaylist[thisTrack];
+}
+
+
 function jbPlay () {
   mytrack.play();
   $("#vinyl").removeClass();
@@ -180,6 +194,32 @@ function jbStop() {
 $('button.jb').click(function(){
   new Audio('music/button.wav').play();
 });
+
+function jbManualSwitch(x) {
+  if (switchingTrack == false) {
+    switchingTrack = true;
+    mytrack.pause();
+    $("#vinyl").css("animation-play-state", "paused");
+    $("#vinyl-wrapper").css("animation-play-state", "paused").delay(100).queue(function(next){
+      new Audio('music/jb_change_record.mp3').play(); 
+      $("#vinyl-wrapper").animate({
+      'marginTop': '+=200px'
+      },1700).delay(1000).queue(function(next){
+          trackOnDemand(x);
+          $("#vinyl-wrapper").animate({
+            'marginTop': '-=200px'
+            },{duration:1700,
+            complete: function() {
+            jbPlay();
+            switchingTrack = false;
+             }
+            });
+      })
+      next();
+      next();
+    });
+  }  
+}
 
 mytrack.addEventListener('canplaythrough', function() {
     globalDuration = mytrack.duration;
