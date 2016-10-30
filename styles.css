@@ -9,6 +9,7 @@ html {
 
 body {
   height: 100%;
+  background-color: #FFFFF0;
 }
 
 #mytrack {
@@ -183,8 +184,33 @@ p#tr5 {
   cursor: pointer;
 }
 
-#jb-mobile {
+#jb-mobile-wrapper {
   display: none;
+  position: relative;
+  margin: 0 auto;
+  width: 866px;
+  height: 1096px;
+}
+#jb-mobile {
+  z-index: 2;
+  position: absolute;
+}
+#mobile-btn {
+  position: absolute;
+  width: 50px;
+  height: 111px;
+  left: 207px;
+  top: 316px;
+  z-index: 3;
+}
+#mobile-btn img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 23px;
+}
+#m-btn-1 {
+  padding-bottom: 2px;
 }
 
 #vinyl {
@@ -210,8 +236,8 @@ p#tr5 {
   #jukebox-wrapper {
     display: none;
   }
-  #jb-mobile {
-    padding-top: 150px;
-    display: block;
+  #jb-mobile-wrapper {
+    padding-top: 100px;
+    display: inline-block;
   }
 }
