@@ -171,7 +171,7 @@ p#tr5 {
   top: 125px;
   left: 201px;
   z-index: 2;
-    -webkit-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   -o-animation-fill-mode: forwards;
 }
@@ -181,6 +181,10 @@ p#tr5 {
 }
 #light-buttons img {
   cursor: pointer;
+}
+
+#jb-mobile {
+  display: none;
 }
 
 #vinyl {
@@ -202,3 +206,12 @@ p#tr5 {
 
 }
 
+@media only screen and (max-width: 960px) {
+  #jukebox-wrapper {
+    display: none;
+  }
+  #jb-mobile {
+    padding-top: 150px;
+    display: block;
+  }
+}
