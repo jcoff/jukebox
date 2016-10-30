@@ -221,6 +221,11 @@ function jbManualSwitch(x) {
   }  
 }
 
+function jbMobilePlay(x) {
+  trackOnDemand(x);
+  jbPlay();
+}
+
 mytrack.addEventListener('canplaythrough', function() {
     globalDuration = mytrack.duration;
 }, false);
