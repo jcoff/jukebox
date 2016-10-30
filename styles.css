@@ -185,7 +185,7 @@ p#tr5 {
 }
 
 #jb-mobile-wrapper {
-  display: none;
+  display: inline-block;
   position: relative;
   margin: 0 auto;
   width: 866px;
