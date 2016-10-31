@@ -140,31 +140,30 @@ body {
 #playlist {
   position: absolute;
   left: 115px;
+  display: inline-block;
 }
 #playlist p {
   position: relative;
-  font: 46px/1 jukebox-ft;
+  font: 40px/1 jukebox-ft;
   color: #2A2626;
-  letter-spacing: 0px;
-  overflow: auto;
 }
-p#tr0 {
-  top: -44px;
+#tr0 {
+  top: -32px;
 }
-p#tr1 {
-  top: -68px;
+#tr1 {
+  top: -43px;
 }
-p#tr2 {
+#tr2 {
+  top: -56px;
+}
+#tr3 {
+  top: -69px;
+}
+#tr4 {
+  top: -81px;
+}
+#tr5 {
   top: -94px;
-}
-p#tr3 {
-  top: -118px;
-}
-p#tr4 {
-  top: -144px;
-}
-p#tr5 {
-  top: -170px;
 }
 
 #vinyl-wrapper {
@@ -221,7 +220,7 @@ p#tr5 {
 }
 #jb-mobile-playlist p {
   position: relative;
-  font: 46px jukebox-ft;
+  font: 40px/1 jukebox-ft;
   color: #2A2626;
   letter-spacing: 0px;
   overflow: auto;
