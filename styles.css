@@ -1,6 +1,6 @@
 @font-face {
-  font-family: jukebox-ft;  
-  src: url(fonts/Canter-Outline.otf);  
+  font-family: Lato-Light;  
+  src: url(fonts/Lato-Light.ttf);  
 }
 
 html {
@@ -102,9 +102,9 @@ body {
   left: 75px;
 }
 #light-buttons img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 #light-buttons ul {
   list-style: none;
@@ -140,12 +140,12 @@ body {
 #playlist {
   top: -1px;
   position: absolute;
-  left: 115px;
+  left: 113px;
   display: inline-block;
 }
 #playlist p {
   position: relative;
-  font: 40px/1 jukebox-ft;
+  font: 35px/1.3 Lato-Light;
   color: #2A2626;
 }
 #tr0 {
@@ -221,7 +221,7 @@ body {
 }
 #jb-mobile-playlist p {
   position: relative;
-  font: 40px/84% jukebox-ft;
+  font: 36px/1 Lato-Light;
   color: #2A2626;
 }
 

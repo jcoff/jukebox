@@ -221,9 +221,35 @@ function jbManualSwitch(x) {
   }  
 }
 
+var commmonPlayImg = '';
+
 function jbMobilePlay(x) {
-  trackOnDemand(x);
-  jbPlay();
+  
+  if(!mytrack.paused && jbTrackCount == x) {
+    mytrack.pause();
+  }
+  else if (jbTrackCount == x){
+    mytrack.play();
+  }
+  else {
+    mytrack.pause();
+    $("#vinyl-wrapper").css("animation-play-state", "paused").delay(10).queue(function(next){
+              trackOnDemand(x);
+              mytrack.play();
+              next();
+     }); 
+
+  }
+  
+  mytrack.addEventListener('play',function(){
+    var currentPlayImg = "img#m-btn-" + jbTrackCount;
+    commmonPlayImg = $(currentPlayImg).attr("src", "img/pause-btn-m.png")
+  });
+  mytrack.addEventListener('pause', function(){
+    var currentPlayImg = "img#m-btn-" + jbTrackCount;
+    $(currentPlayImg).attr("src", "img/play-btn-m.png");
+  });
+ 
 }
 
 mytrack.addEventListener('canplaythrough', function() {
