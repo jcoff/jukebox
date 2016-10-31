@@ -216,16 +216,13 @@ body {
   z-index: 3;
   position: absolute;
   display: inline-block;
-  top: 440px;
+  top: 410px;
   left: 270px;
 }
 #jb-mobile-playlist p {
   position: relative;
-  font: 40px/1 jukebox-ft;
+  font: 40px/80% jukebox-ft;
   color: #2A2626;
-  letter-spacing: 0px;
-  overflow: auto;
-  padding-bottom: 5px;
 }
 
 #vinyl {
