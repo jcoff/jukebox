@@ -138,6 +138,7 @@ body {
   top: 358px;
 }
 #playlist {
+  top: -1px;
   position: absolute;
   left: 115px;
   display: inline-block;
@@ -148,22 +149,22 @@ body {
   color: #2A2626;
 }
 #tr0 {
-  top: -32px;
+  top: -20px;
 }
 #tr1 {
-  top: -43px;
+  top: -30px;
 }
 #tr2 {
-  top: -56px;
+  top: -43px;
 }
 #tr3 {
-  top: -69px;
+  top: -56px;
 }
 #tr4 {
-  top: -81px;
+  top: -68px;
 }
 #tr5 {
-  top: -94px;
+  top: -81px;
 }
 
 #vinyl-wrapper {
